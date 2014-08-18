@@ -1,0 +1,8 @@
+author: meta1203
+database: false
+generator: http://dinnerbone.com/minecraft/tools/pluginator/
+main: me.meta1203.plugins.cryptocashier.Cryptocashier
+name: CryptoCashier
+startup: postworld
+version: '0.1'
+database: true
