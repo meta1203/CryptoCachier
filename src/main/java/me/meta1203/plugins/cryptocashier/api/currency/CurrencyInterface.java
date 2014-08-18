@@ -12,9 +12,13 @@ import java.io.File;
  *
  * @author hunter
  */
-public interface InitilizationInterface {
+public interface CurrencyInterface {
+    // Startup Functions
     public Class[] getPersistanceClasses(); 
     public boolean start(File storageFolder, EbeanServer persistance);
     public boolean stop();
     public void handleError();
+    
+    // Ingame money access
+    public String getPlayernameFromAddress();
 }
