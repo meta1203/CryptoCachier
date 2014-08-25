@@ -20,8 +20,9 @@ package me.meta1203.plugins.cryptocashier.api.currency;
  * @author hunter
  */
 public class CurrencyException extends Exception {
+
     private final String errorType;
-    
+
     public CurrencyException(String errorType) {
         this.errorType = errorType;
     }
@@ -35,5 +36,5 @@ public class CurrencyException extends Exception {
     public String getMessage() {
         return errorType;
     }
-    
+
 }

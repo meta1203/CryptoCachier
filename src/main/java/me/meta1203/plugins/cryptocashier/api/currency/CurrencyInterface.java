@@ -14,6 +14,7 @@
  * limitations under the License.
  */
 package me.meta1203.plugins.cryptocashier.api.currency;
+
 import com.avaje.ebean.EbeanServer;
 import java.io.File;
 
@@ -22,12 +23,16 @@ import java.io.File;
  * @author hunter
  */
 public interface CurrencyInterface {
+
     // Startup Functions
-    public Class[] getPersistanceClasses(); 
+    public Class[] getPersistanceClasses();
+
     public boolean start(File storageFolder, EbeanServer persistance);
+
     public boolean stop();
+
     public void handleError();
-    
+
     // Ingame money access
     public String getPlayernameFromAddress();
 }

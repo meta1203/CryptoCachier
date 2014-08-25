@@ -21,6 +21,7 @@ import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class Cryptocashier extends JavaPlugin implements Listener {
+
     @Override
     public void onDisable() {
         // TODO: Place any custom disable code here.
@@ -36,4 +37,3 @@ public class Cryptocashier extends JavaPlugin implements Listener {
         // event.getPlayer().sendMessage("Welcome, " + event.getPlayer().getDisplayName() + "!");
     }
 }
-

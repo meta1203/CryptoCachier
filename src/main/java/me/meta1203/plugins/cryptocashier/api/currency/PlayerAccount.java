@@ -13,7 +13,6 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
 package me.meta1203.plugins.cryptocashier.api.currency;
 
 /**
@@ -21,33 +20,34 @@ package me.meta1203.plugins.cryptocashier.api.currency;
  * @author hunter
  */
 public class PlayerAccount {
+
     private final String username;
     private final String address;
     private float value;
-    
+
     public PlayerAccount(String username, String address, float value) {
         this.address = address;
         this.username = username;
         this.value = value;
     }
-    
+
     public String getUsername() {
         return this.username;
     }
-    
+
     public String getAddress() {
         return this.address;
     }
-    
+
     public float getValue() {
         return value;
     }
-    
+
     public float addValue(float add) {
         value = value + add;
         return value;
     }
-    
+
     public float subtractValue(float subtract) throws Exception {
         value = value - subtract;
         if (value < 0) {

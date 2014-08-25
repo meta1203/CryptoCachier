@@ -20,5 +20,5 @@ package me.meta1203.plugins.cryptocashier.api.currency;
  * @author hunter
  */
 public interface NetworkInterface {
-    
+
 }
